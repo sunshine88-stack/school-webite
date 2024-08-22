@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Registration Website.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 80px;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .facilities-container {
+            display: inline;
+            justify-content: space-between;
+            margin-bottom: 20px 0;
+        }
+        .facilities-container img {
+            width: 33%;
+            height: auto;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #008080;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            min-width: 160px;
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            text-align: left;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Laptops and desktops (between 992px and 1200px) */
+@media (max-width: 1200px) {
+    .facility {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .facilities-container {
+        padding: 15px;
+    }
+}
+
+/* Tablets (between 768px and 992px) */
+@media (max-width: 992px) {
+    .facility {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .facilities-container {
+        padding: 10px;
+    }
+
+    .facility img {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile phones (below 768px) */
+@media (max-width: 768px) {
+    .facilities-container {
+        padding: 5px;
+    }
+
+    .facility {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .facility img {
+        width: 100%;
+    }
+
+    .facility h3 {
+        font-size: 16px;
+    }
+
+    .facility p {
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <!-- school logo -->
+        <img src="logo-img.png" alt="School Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="facilities.html">FACILITIES</a></li>
+                <li class="dropdown">
+                    <a href="#">REGISTRATION</a>
+                    <div class="dropdown-content">
+                        <a href="studentregister.php">New Students</a>
+                        <a href="login.php">Old Students</a>
+                    </div>
+                </li>
+                <li><a href="contact.php">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <center><h1>OUR SCHOOL FACILITIES</h1></center>
+        <div class="image-container">
+            <img src="football-field.jpg" alt="School football field">
+        </div>
+        <div class="facilities-container">
+                <img src="biology-lab.jpg" alt="School Biology Lab">
+                <img src="physics-lab.jpg" alt="School Physics lab">
+                <img src="chemistry-lab.jpg" alt="School Chemistry lab">
+                <img src="school-poultry.jpg" alt="School poultry">
+                <img src="school-farm.jpg" alt="School farm">
+                <img src="students-with-computers.jpg" alt="School Computer lab">
+        </div>
+        <center><h2>Basketball Court</h2></center>
+        <div class="image-container">
+            <img src="basketball-court.jpg" alt="School Basketball Court">
+        </div>
+
+        <footer>
+            <nav>
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="facilities.html">FACILITIES</a></li>
+                <li><a href="#">REGISTRATION</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <br />
+            &copy; <b>2024 Evergreen College Website. All rights reserved.</b>
+        </footer>
+</body>
+</html>
